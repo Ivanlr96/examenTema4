@@ -33,7 +33,9 @@ color: 'rojo',
 fabricacion: 1992,
 cilindrada: '2400'
 }
-
+localStorage.setItem("vehiculo", JSON.stringify(vehiculoObject))
+console.log(JSON.parse(localStorage.getItem("vehiculo")))
+console.log(localStorage.getItem("vehiculo"))
 
 const deportivoObject= {
     marca: deportivo1.marca,
@@ -42,4 +44,10 @@ const deportivoObject= {
     fabricacion: deportivo1.fabricacion,
     cilindrada: deportivo1.cilindrada,
     potenciaMotor: deportivo1.potenciaMotor
+}
+
+for (let key in deportivoObject) {
+    if(deportivoObject.hasOwnProperty(key)) {
+        localStorage.setItem(key, deportivoObject[key])
+    }
 }
