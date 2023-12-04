@@ -15,5 +15,11 @@ class Vehiculo {
     #fabricacion
     #cilindrada
 
-    
+    constructor (marca,modelo,color,fabricacion,cilindrada) {
+        this.#marca=marca;
+        this.#modelo=modelo;
+        this.#color=color;
+        this.#fabricacion=fabricacion;
+        this.#cilindrada=cilindrada;
+    }
 }
