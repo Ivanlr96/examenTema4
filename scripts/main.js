@@ -74,5 +74,16 @@ class Vehiculo {
     get cilindrada() {
         return this.#cilindrada
     }
+    set cilindrada(cilindrada){
+        this.#cilindrada=cilindrada
+    }
 
+}
+
+class AutomovilDeportivo extends Vehiculo {
+    #potenciaMotor
+    constructor (marca,modelo,color,fabricacion,cilindrada,potenciaMotor) {
+        super (marca,modelo,color,fabricacion,cilindrada)
+        this.#potenciaMotor=potenciaMotor
+    }
 }
