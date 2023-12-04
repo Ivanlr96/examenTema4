@@ -31,20 +31,20 @@ class Vehiculo {
         <p> El vehiculo tiene una cilindrada de -> ${this.#cilindrada}</p>
 
         `
-        mostrarResultado(datos)=`<p>${datos}</p>`
+        mostrarResultado(`<p>${datos}</p>`)
     }
 
     acelerar(velocidad) {
-        const mensaje= `<p> El vehículo de la marca ${this.#marca} ha acelerado ${velocidad} `
-        mostrarResultado=`<p> ${mensaje}</p>`
+        const mensaje= `<p> El vehículo de la marca ${this.#marca} ha acelerado ${velocidad} khm/h `
+        mostrarResultado(`<p> ${mensaje}</p>`)
     }
-    arracar(){
+    arrancar(){
         const mensaje=`<p> El vehículo de la marca ${this.#marca} ha arrancado`
-        mostrarResultado=`<p> ${mensaje}</p>`
+        mostrarResultado(`<p> ${mensaje}</p>`)
     }
     frenar(){
         const mensaje=`<p> El vehículo de la marca ${this.#marca} ha frenado`
-        mostrarResultado=`<p> ${mensaje}</p>`
+        mostrarResultado(`<p> ${mensaje}</p>`)
     }
 
     get marca () {
@@ -107,3 +107,10 @@ vehiculo1.mostrarDatos()
 vehiculo1.arrancar()
 vehiculo1.acelerar(140)
 vehiculo1.frenar()
+
+const deportivo1=new AutomovilDeportivo('Ferrari','Spider','Amarillo',2020,'4000','500')
+mostrarResultado('--Deportivo 1--')
+deportivo1.mostrarDatos()
+deportivo1.arrancar()
+deportivo1.acelerar(140)
+deportivo1.frenar()
