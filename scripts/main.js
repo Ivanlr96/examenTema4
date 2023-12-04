@@ -1,4 +1,7 @@
-
+/*
+Autor: IVán lorenzo ruiz
+Link: https://github.com/Ivanlr96/examenTema4
+*/
 import {Vehiculo} from "../scripts/Vehiculo.js"
 import { AutomovilDeportivo } from "./AutomovilDeportivo.js"
 const resultadoContainer=document.createElement('div')
