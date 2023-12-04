@@ -32,4 +32,17 @@ class Vehiculo {
         `
         mostrarResultado()=`<p>${datos}</p>`
     }
+
+    acelerar(velocidad) {
+        const mensaje= `<p> El vehículo de la marca ${this.#marca} ha acelerado ${velocidad} `
+        mostrarResultado=`<p> ${mensaje}</p>`
+    }
+    arracar(){
+        const mensaje=`<p> El vehículo de la marca ${this.#marca} ha arrancado`
+        mostrarResultado=`<p> ${mensaje}</p>`
+    }
+    frenar(){
+        const mensaje=`<p> El vehículo de la marca ${this.#marca} ha frenado`
+        mostrarResultado=`<p> ${mensaje}</p>`
+    }
 }
