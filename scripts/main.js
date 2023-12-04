@@ -6,3 +6,14 @@ document.body.appendChild(resultadoContaioner)
 function mostrarResultado (mensaje) {
     resultadoContainer.innerHTML=`<p>${mensaje}</p>`
 }
+
+
+class Vehiculo {
+    #marca
+    #modelo
+    #color
+    #fabricacion
+    #cilindrada
+
+    
+}
