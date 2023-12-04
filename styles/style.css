@@ -5,9 +5,13 @@
 body {
     font-family: 'nova';
     background-image: url('../assets/bmw-m850i-individual-night-sky-si.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 p {
     font-size: 1.5rem;
+    color: white;
 
 }
 /* Pseudoselector para resaltar la primera letra de cada párrafo para resaltar donde empieza cada línea */
@@ -17,6 +21,37 @@ p:first-letter {
 }
 div {
     background-color: blue;
-    width: 500px;
+    width: 600px;
     align-items: center;
+    background: rgb(80,99,196);
+background: radial-gradient(circle, rgba(80,99,196,1) 60%, rgba(0,0,0,1) 100%);
 }
+
+span {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    color: white;
+    border-right: 4px solid;
+    width: 13ch;
+    animation: writting 3s steps(54) 0.5s forwards, blink 500ms infinite alternate 4s;
+    overflow: hidden;
+    font-size: 3em;
+    -webkit-box-shadow: 89px 13px 5px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 89px 13px 5px 0px rgba(0,0,0,1);
+    box-shadow: 89px 13px 5px 0px blue;
+}
+
+@keyframes writting {
+from {
+    width: 0;
+}
+}
+
+@keyframes blink {
+50% {
+    border-color: transparent;
+}
+}
+
+

@@ -51,3 +51,8 @@ for (let key in deportivoObject) {
         localStorage.setItem(key, deportivoObject[key])
     }
 }
+
+/* Para eliminar elementos en concreto:
+localStorage.removeItem('color')
+localstorage.removeItem('potenciaMotor)
+*/
