@@ -1,7 +1,7 @@
 
 
-const resultadoContaioner=document.createElement('div')
-document.body.appendChild(resultadoContaioner)
+const resultadoContainer=document.createElement('div')
+document.body.appendChild(resultadoContainer)
 
 function mostrarResultado (mensaje) {
     resultadoContainer.innerHTML=`<p>${mensaje}</p>`
@@ -29,8 +29,9 @@ class Vehiculo {
         <p> El color del vehículo es -> ${this.#color}</p>
         <p> El vehiculo se fabricó en -> ${this.#fabricacion}</p>
         <p> El vehiculo tiene una cilindrada de -> ${this.#cilindrada}</p>
+
         `
-        mostrarResultado()=`<p>${datos}</p>`
+        mostrarResultado(datos)=`<p>${datos}</p>`
     }
 
     acelerar(velocidad) {
@@ -98,3 +99,8 @@ class AutomovilDeportivo extends Vehiculo {
         this.#potenciaMotor=potenciaMotor
     }
 }
+
+const vehiculo1= new Vehiculo ('BMW', 'CLK', 'rojo', 1992, '2400')
+mostrarResultado('---Vehiculo 1---')
+
+vehiculo1.mostrarDatos()
