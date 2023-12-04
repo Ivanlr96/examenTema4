@@ -4,7 +4,7 @@ const resultadoContainer=document.createElement('div')
 document.body.appendChild(resultadoContainer)
 
 function mostrarResultado (mensaje) {
-    resultadoContainer.innerHTML=`<p>${mensaje}</p>`
+    resultadoContainer.innerHTML+=`<p>${mensaje}</p>`
 }
 
 
@@ -103,4 +103,7 @@ class AutomovilDeportivo extends Vehiculo {
 const vehiculo1= new Vehiculo ('BMW', 'CLK', 'rojo', 1992, '2400')
 mostrarResultado('---Vehiculo 1---')
 
-vehiculo1.mostrarDatos()
+vehiculo1.mostrarDatos() 
+vehiculo1.arrancar()
+vehiculo1.acelerar(140)
+vehiculo1.frenar()
