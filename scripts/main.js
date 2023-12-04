@@ -45,4 +45,34 @@ class Vehiculo {
         const mensaje=`<p> El vehículo de la marca ${this.#marca} ha frenado`
         mostrarResultado=`<p> ${mensaje}</p>`
     }
+
+    get marca () {
+        return this.#marca
+    }
+    set marca (marca) {
+        this.#marca=marca
+    }
+    get modelo () {
+        return this.#modelo
+    }
+    set modelo (modelo) {
+        this.#modelo=modelo
+        
+    }
+    get color () {
+        return this.#color
+    }
+    set color (color) {
+        this.#color=color
+    }
+    get fabricacion(){
+        return this.#fabricacion
+    }
+    set fabricacion(fabricacion) {
+        this.#fabricacion=fabricacion
+    }
+    get cilindrada() {
+        return this.#cilindrada
+    }
+
 }
