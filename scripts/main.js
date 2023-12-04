@@ -24,3 +24,22 @@ mostrarResultado(`El vehículo tiene una potencia de motor de -> ${deportivo1.po
 deportivo1.arrancar()
 deportivo1.acelerar(140)
 deportivo1.frenar()
+
+
+const vehiculoObject= {
+marca: 'BMW',
+modelo: 'CLK',
+color: 'rojo',
+fabricacion: 1992,
+cilindrada: '2400'
+}
+
+
+const deportivoObject= {
+    marca: deportivo1.marca,
+    modelo: deportivo1.modelo,
+    color: deportivo1.color,
+    fabricacion: deportivo1.fabricacion,
+    cilindrada: deportivo1.cilindrada,
+    potenciaMotor: deportivo1.potenciaMotor
+}

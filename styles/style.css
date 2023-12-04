@@ -1,4 +1,23 @@
+@font-face {
+    font-family: 'nova';
+    src: url('../assets/fonts/NovaSquare-Regular.ttf');
+}
+body {
+    text-align: center;
+    font-family: 'nova';
+}
 p {
+    font-size: 1.5rem;
+
+}
+/* Pseudoselector para resaltar la primera letra de cada párrafo para resaltar donde empieza cada línea */
+p:first-letter {
     
-    font-size: 2em;
+    font-weight: 600;
+}
+div {
+    background-color: blue;
+    width: 500px;
+    margin: 0 auto;
+    align-items: center;
 }
